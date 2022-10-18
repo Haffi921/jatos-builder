@@ -1,0 +1,6 @@
+{
+  "script": {
+    "start": "jatos-builder start",
+    "build": "jatos-builder build"
+  }
+}

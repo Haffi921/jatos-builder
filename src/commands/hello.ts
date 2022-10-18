@@ -1,5 +1,5 @@
 import { Command } from "commander";
-import { callTask } from "../util/call-task";
+import { call_task } from "../util/call_task";
 import "../gulp/testTask";
 
 const hello = new Command("hello");
@@ -9,7 +9,7 @@ hello
   .argument("[name]", "Name to greet")
   .action((name) => {
     if (name) console.log(`Hello, ${name}`);
-    else callTask("test");
+    else call_task("test");
   });
 
 export default hello;
